@@ -15,6 +15,7 @@ import { Input } from "@nextui-org/input";
 import { IoIosNotificationsOutline } from "react-icons/io";
 
 import { SearchIcon } from "@/src/components/icons";
+import { ThemeSwitch } from "@/src/components/theme-switch";
 
 export const NavigationBar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -85,6 +86,8 @@ export const NavigationBar = () => {
             <IoIosNotificationsOutline size={`30`} />
           </Link>
         </NavbarItem>
+        <ThemeSwitch />
+
         <NavbarItem>
           <div
             className={`rounded-full bg-gray-500 w-10 h-10 drop-shadow-md`}
